@@ -1,0 +1,58 @@
+{
+  "name": "dsh-linus-brand",
+  "version": "1.0.0",
+  "description": "Linus 插画品牌标记 + 手绘宠物动画：把 DeepSeek Harness Web 侧栏的品牌位换成自己的角色，并把输入框上沿的吉祥物换成同一角色的 18 种连续动作（19 fps，带像素粒子）。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "mark.png",
+    "assets/*.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "web-ui",
+    "theme",
+    "brand",
+    "mascot",
+    "pet",
+    "animation",
+    "linus"
+  ],
+  "license": "MIT",
+  "author": "AChengLinus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AChengLinus/dsh-linus-brand.git"
+  },
+  "homepage": "https://github.com/AChengLinus/dsh-linus-brand#readme",
+  "bugs": {
+    "url": "https://github.com/AChengLinus/dsh-linus-brand/issues"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.2-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
