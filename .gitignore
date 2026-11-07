@@ -5,3 +5,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 assets/manifest.json
+
+# build artifacts
+*.tgz
