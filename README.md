@@ -56,6 +56,23 @@ dsh plugin add github:AChengLinus/dsh-linus-brand --profile desktop
 
 > 从 zip 解压的目录直接当本地路径安装也可以：安装框要的是**绝对路径**，相对路径会被拒绝。
 
+### 让它出现在「插件 → Discover」市场里
+
+官方的 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 是策展列表，需要提 PR 审核。不想等审核就用**自己的索引源**（DSH 0.2.1+ 的插件市场支持任意 format-1 索引）：
+
+1. **插件 → Discover → Index sources（管理索引源）→ 添加**
+2. 粘贴本仓库的索引地址：
+
+   ```
+   https://cdn.jsdelivr.net/gh/AChengLinus/dsh-linus-brand@main/index.json
+   ```
+
+   备用（GitHub 直连）：`https://raw.githubusercontent.com/AChengLinus/dsh-linus-brand/main/index.json`
+
+3. 之后 Discover 里就有「Linus 品牌与宠物」卡片，点 **Install** 即装。
+
+这份 `index.json` 是 format 1，已用 DSH 自带的 `parseMarketIndex` 校验通过；卡片里的安装目标固定到提交 `079311c`，发新版本时改 `versions[]` 即可（`source.type: git` + 40 位 commit + 可选 `path`）。
+
 ## 动画规格
 
 - 精灵条：**8 列 × R 行**，每格一帧，共 `8 × R` 帧（24–72 帧）；

@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "Linus 品牌与宠物 · 个人索引",
+    "en": "Linus brand & pet · personal index"
+  },
+  "description": {
+    "zh": "AChengLinus 的 DeepSeek Harness 插件索引：把 Linus 插画装进侧栏品牌位与输入框上沿的宠物。",
+    "en": "AChengLinus' DeepSeek Harness plugin index: the Linus artwork as the sidebar brand mark and as the composer pet."
+  },
+  "metadata": {
+    "categories": {
+      "appearance": {
+        "title": {
+          "zh": "界面与外观",
+          "en": "UI & appearance"
+        }
+      }
+    },
+    "labels": {
+      "brand": {
+        "title": {
+          "zh": "品牌替换",
+          "en": "Brand replacement"
+        }
+      },
+      "pet": {
+        "title": {
+          "zh": "宠物动画",
+          "en": "Pet animation"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-linus-brand",
+      "title": {
+        "zh": "Linus 品牌与宠物",
+        "en": "Linus brand and pet"
+      },
+      "description": {
+        "zh": "把 Linus 插画装进 DeepSeek Harness Web：侧栏品牌位换成角色头像 + 名字，输入框上沿的默认吉祥物（Deepy 鲸鱼）换成同一角色的 18 状态手绘动画（24–72 帧、≈19 fps、像素粒子、状态切换淡入）。不修改皮肤文件，卸载即复原。需要皮肤 dsh-claude-style 且吉祥物设为 Deepy。",
+        "en": "Paints the Linus artwork into the DeepSeek Harness web UI: the sidebar brand mark becomes the character avatar plus name, and the composer pet becomes the same character in 18 hand-drawn animation states (24-72 distinct frames, ~19 fps, pixel particles, soft fade on state change). Skin files stay untouched; uninstalling restores the stock look. Requires dsh-claude-style with mascot: deepy."
+      },
+      "icon": "https://cdn.jsdelivr.net/gh/AChengLinus/dsh-linus-brand@main/icon.png",
+      "author": "AChengLinus",
+      "homepage": "https://github.com/AChengLinus/dsh-linus-brand#readme",
+      "repository": {
+        "url": "https://github.com/AChengLinus/dsh-linus-brand"
+      },
+      "metadata": {
+        "category": "appearance",
+        "keywords": [
+          "brand",
+          "mascot",
+          "pet",
+          "animation",
+          "theme",
+          "linus"
+        ],
+        "labels": [
+          "brand",
+          "pet"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794018000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/AChengLinus/dsh-linus-brand",
+            "commit": "079311c229cd4a4c753a2300d02b88c049a31161"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
